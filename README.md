@@ -2,6 +2,8 @@
 Homebrew micropython driver for msa301 3-axis accelerometer. Tested on Raspberry Pico.
 All functionality described in the msa301 datasheet is implemented (https://download.kamami.pl/p585252-MSA301.pdf)
 
+As a starting point, I used a simple 3-axis accelerometer driver "MicroPython LIS2HH12 driver, Copyright (c) 2017-2018 Mika Tuupola" (MIT License) and built-up from there.
+
 I am a physicist, not a professional programmer. This is my first driver, so there might be some bugs! My goal was to program the driver so that it is as memory-efficient and computation-efficient I can make it, while retaining all the functionality of the msa301 device. there surely can be some improvements to be made, which would be most welcome! The msa301 has a lot of functionality with plenty of settings for various types of motion interrupts etc. If you are sure you are not going to use some of the functionality, you can delete specific dictionaries, functions, properties and addresses to save memory.
 
 The files include:
